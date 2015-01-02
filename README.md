@@ -20,4 +20,11 @@ after lot of time of repeat this process, I decide to make this tool. Althrough 
 
 ## usage
 
+
+1.  if a normal url:
+
         txt2qr http://www.google.com
+
+2.  if a url with `&`
+
+        txt2qr "http://www.google.com/?a=b&c=d"
