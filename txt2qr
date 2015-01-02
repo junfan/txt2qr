@@ -1,0 +1,3 @@
+#!/bin/sh
+wget "http://qr.liantu.com/api.php?text=$1" -O ~/tmp/txt2qrcode.png -o /dev/null
+fcp ~/tmp/txt2qrcode.png
