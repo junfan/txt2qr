@@ -1,4 +1,7 @@
 #!/bin/sh
+echo "use pip to install qrcode"
+sudo pip install qrcode
+echo "mkdir ~/tmp/"
 mkdir ~/tmp/
 echo "copy ./fcp to /usr/local/bin"
 cp ./fcp /usr/local/bin/

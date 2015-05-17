@@ -1,4 +1,3 @@
 #!/bin/sh
-encoded_url=`python -c "import urllib2;print urllib2.quote('$1')"`
-wget "http://qr.liantu.com/api.php?text=$encoded_url" -O ~/tmp/txt2qrcode.png -o /dev/null
+python -c "import os;import urllib2;import qrcode;img=qrcode.make('$1');img.save(os.path.expanduser('~/tmp/txt2qrcode.png'));"
 fcp ~/tmp/txt2qrcode.png
